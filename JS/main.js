@@ -84,28 +84,28 @@ menuBtn.addEventListener("click",()=>{
     }
 })
 
-const songsList = [
-    {
-        name : "Nindiya",
-        path : "../assets/Audio/Nindiya.mp3"
-    },
-    {
-        name : "Illenium",
-        path : "../assets/Audio/illenium.mp3"
-    },
-    {
-        name : "Pareshaniyo Se",
-        path : "../assets/Audio/Pareshaniyo se.mp3"
-    },
-    {
-        name : "Hum Dum Tera",
-        path : "../assets/Audio/Hum Dum Tera.mp3"
-    }
+// const songsList = [
+//     {
+//         name : "Nindiya",
+//         path : "../assets/Audio/Nindiya.mp3"
+//     },
+//     {
+//         name : "Illenium",
+//         path : "../assets/Audio/illenium.mp3"
+//     },
+//     {
+//         name : "Pareshaniyo Se",
+//         path : "../assets/Audio/Pareshaniyo se.mp3"
+//     },
+//     {
+//         name : "Hum Dum Tera",
+//         path : "../assets/Audio/Hum Dum Tera.mp3"
+//     }
     
-]
-songsList.forEach(song => {
-    new AudioPlayer(song.name,song.path);
-})
+// ]
+// songsList.forEach(song => {
+//     new AudioPlayer(song.name,song.path);
+// })
 
 
 
