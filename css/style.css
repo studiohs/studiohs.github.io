@@ -701,19 +701,19 @@ div.connectOn>p {
 
 
 .service-card:nth-child(1) {
-    background: url("../assets/media/music-composition.jpg"), rgba(0, 0, 0, 0.356);
+    background: url("./../assets/media/music-composition.jpg"), rgba(0, 0, 0, 0.356);
     background-blend-mode: multiply;
     background-size: cover;
 }
 
 .service-card:nth-child(2) {
-    background: url("../assets/media/sound-design.jpg"), rgba(0, 0, 0, 0.432);
+    background: url("./../assets/media/sound-design.jpg"), rgba(0, 0, 0, 0.432);
     background-blend-mode: multiply;
     background-size: cover;
 }
 
 .service-card:nth-child(3) {
-    background: url("../assets/media/media-production.jpg"), rgba(0, 0, 0, 0.486);
+    background: url("./../assets/media/media-production.jpg"), rgba(0, 0, 0, 0.486);
     background-blend-mode: multiply;
     background-size: cover;
 }
