@@ -7,10 +7,10 @@ gsap.to("#preLoader",{
 
 gsap.fromTo(".loaderText",{
     opacity:0,
-    scale:0.9,
+    // scale:0.9,
 },{
     delay:1,
-    scale:1,
+    // scale:1,
     opacity:1,
     duration:1,
     repeat:-1,
