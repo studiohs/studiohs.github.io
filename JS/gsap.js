@@ -49,15 +49,6 @@ gsap.fromTo("#subLeadHeading",{
     }
 })
 
-gsap.fromTo(".hor-lines",{
-    x:-1000
-},{
-    delay:5.5,
-    duration:1,
-    x:-100,
-    ease:"power4",
-    stagger:0.1,
-})
 
 gsap.fromTo(".leftMenuItem",{
     opacity:0,
@@ -71,15 +62,15 @@ gsap.fromTo(".leftMenuItem",{
     stagger:0.1
 })
 
-gsap.fromTo(".rightMenuBtn",{
-    opacity:0,
-},{
-    opacity:1,
-    delay:6.5,
-    duration:1,
-    ease:"elastic",
-    stagger:0.1
-})
+// gsap.fromTo(".rightMenuBtn",{
+//     opacity:0,
+// },{
+//     opacity:1,
+//     delay:6.5,
+//     duration:1,
+//     ease:"elastic",
+//     stagger:0.1
+// })
 
 
 gsap.fromTo(".landing-page-cta",{
@@ -144,12 +135,33 @@ tl.from('.pageHeading',{
     duration:2,
     stagger:0.3
 },"-=0.5")
+
 .from(".service-card",{
     opacity:0,
     stagger:0.2
-},"-=1")
+},"-=1");
 
 
+let tlsec3 = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#section-3',
+        start : "top center",
+        end:'+=200',
+    }
+})
+
+tlsec3.fromTo(".section3gsapLineAnim",{
+    y:20,
+    skewY:5,
+    opacity:0
+},{
+    y:0,
+    skewY:0,
+    opacity:1,
+    ease:"power4",
+    duration:2,
+    stagger:0.3
+},"-=0.5")
 
 
 
@@ -173,6 +185,7 @@ document.getElementById("fixedMenuBtn").addEventListener("click",()=>{
         });
         gsap.to('#fixedSideMenu li',{
             x:'-100%',
+            visibility:'hidden',
             delay:1.2,
             duration:2,
             ease: "expo.inOut",
@@ -191,6 +204,7 @@ document.getElementById("fixedMenuBtn").addEventListener("click",()=>{
             ease: "power4"
         });
         gsap.to('#fixedSideMenu li',{
+            visibility:'visible',
             x:0,
             duration:2.5,
             ease: "expo.inOut",
@@ -206,7 +220,7 @@ document.getElementById("fixedMenuBtn").addEventListener("click",()=>{
             skewX:0,
             skewY:0,
             opacity:1,
-            delay:1.5,
+            delay:1,
             duration:1.5,
             ease:"expo.inOut",
             stagger:0.5

@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap" 
     rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,800;0,900;1,800;1,900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,18 +28,19 @@
     
     <!-- CANVAS FOR BACKGROUND INTERACTIVITY -->
     <canvas></canvas>
+    <div class="canvas-mask"></div>
     
     
     <!-- CUSTOM CURSOR -->
-    <!-- <div id="innerCursor"></div>
-    <div id="outerCursor"></div> -->
+    <div id="innerCursor"></div>
+    <div id="outerCursor"></div>
     
     <!-- FIXED SIDE MENU  -->
-    <button id="fixedMenuBtn"> <i class="fas fa-bars"></i> </button> 
+    <button id="fixedMenuBtn"> <i class="fas fa-arrow-right"></i> </button> 
     <aside id="fixedSideMenu">
         <li><a href="#" class="sideMenuItem">Services</a></li>
+        <li><a href="#" class="sideMenuItem">Gears</a></li>
         <li><a href="#" class="sideMenuItem">Contact</a></li>
-        <li><a href="#" class="sideMenuItem">About</a></li>
         <li><a href="#" class="sideMenuItem">Work</a></li>
     </aside>
 
@@ -46,8 +49,9 @@
         <nav id="topNavigation">
             <ul class="leftMenu">
                 <a href="#" class="leftMenuItem currentActive"><li><i style="font-size: 1rem;" class="fas fa-play"></i> &nbsp; Home</li></a>
+                
                 <a href="#" class="leftMenuItem"><li><i style="font-size: 1rem;" class="fas fa-cog"></i> &nbsp; Services</li></a>
-                <!-- <a href="#" class="leftMenuItem"><li><i style="font-size: 1rem;" class="fas fa-play"></i> &nbsp; Work</li></a> -->
+                <a href="#" class="leftMenuItem"><li><i style="font-size: 1rem;" class="fas fa-microphone"></i> &nbsp; Gears</li></a>
                 <a href="#footer" class="leftMenuItem"><li><i style="font-size: 1rem;" class="fas fa-plus"></i> &nbsp; Contact</li></a>
             </ul>
             <div class="rightMenu">
@@ -63,11 +67,13 @@
             <hr class="hor-lines"> -->
 
 
-            <h3 id="subLeadHeading">we create <span>sound</span> you love to <span>listen.</span></h1>
             <h1 id="leadHeading">Studio hs<span>.</span></h1>
+            <h3 id="subLeadHeading">we create <span>sound</span> you love to <span>listen.</span></h1>
             
-            <a href="#section-2" class="landing-page-cta look-more">Look More &nbsp; <i class="fas fa-arrow-right"></i></a>
-            <a id="workSectionBtn" class="landing-page-cta work">work &nbsp; <i class="fas fa-arrow-right"></i></a>
+            <div class="landingCTAWrapper">
+                <a href="#section-2" class="landing-page-cta look-more">Look More &nbsp; <i class="fas fa-arrow-right"></i></a>
+                <a id="workSectionBtn" class="landing-page-cta work">work &nbsp; <i class="fas fa-arrow-right"></i></a>
+            </div>
 
             <div class="socialIcons">
                 <p data-color="#384E77" data-social="facebook" id="facebook-socialBtn"><i class="fab fa-facebook-f"></i></p>
@@ -109,6 +115,9 @@
         </div>
 
     </section>
+
+
+    
     <section id="section-3">
         <h1 class="pg-watermark">Who we are</h1>
         <aside>
@@ -118,19 +127,22 @@
         </aside>
         <main>
             <p class="who-we-are-desc">
-                Hi, My name is Harshit Shrivastava.<br>
-                I'm a composer , music producer and singer-songwriter<br>
-                Love for music and understanding of classical concepts of music<br>
-                always pushed me for better music compositions since childhood.<br>
+                <span class='section3gsapLineAnim'>Hi, My name is Harshit Shrivastava.</span><br>
+                <span class='section3gsapLineAnim'>I'm a composer , music producer and singer-songwriter</span><br>
+                <span class='section3gsapLineAnim'>Love for music and understanding of classical concepts of music</span><br>
+                <span class='section3gsapLineAnim'>always pushed me for better music compositions since childhood.</span><br>
 
-                I have a good experience of over 8 years in entertainment and media industry<br>
-                along with various award winning projects.
+                <span class='section3gsapLineAnim'>I have a good experience of over 8 years in entertainment and media industry</span><br>
+                <span class='section3gsapLineAnim'>along with various award winning projects.</span>
                 <br><br>
-                We Would love to help you with<br>
-                complete audio solutions for every platform out there.
+                <span class='section3gsapLineAnim'>We Would love to help you with</span><br>
+                <span class='section3gsapLineAnim'>complete audio solutions for every platform out there.</span>
             </p>
         </main>
     </section>
+
+
+
     <section id="footer">
         <h1 class="pg-watermark">Get in touch</h1>
         <div class="left">
