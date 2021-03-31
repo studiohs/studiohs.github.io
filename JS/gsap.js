@@ -165,6 +165,17 @@ tlsec3.fromTo(".section3gsapLineAnim",{
 
 
 
+gsap.fromTo('path',{
+    opacity:0,
+},{
+    opacity:1,
+    stagger:0.25,
+    duration:5,
+    yoyo:true,
+    repeat:-1
+})
+
+
 // sideMenu
 document.getElementById("fixedMenuBtn").addEventListener("click",()=>{
 
