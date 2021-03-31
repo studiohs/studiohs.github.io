@@ -190,23 +190,24 @@ document.getElementById("fixedMenuBtn").addEventListener("click",()=>{
         });
         gsap.to('#fixedSideMenu li',{
             x:'-100%',
-            visibility:'hidden',
-            delay:1.2,
+            delay:1.8,
             duration:2,
             ease: "expo.inOut",
             stagger:0.1
         });
         gsap.to('#fixedSideMenu',{
             x:'-100%',
-            delay:3.5,
+            visibility:'hidden',
+            delay:4,
             duration:1,
             ease: "power4"
         });
     }else{
         gsap.to('#fixedSideMenu',{
+            visibility:'visible',
             x:0,
             duration:1,
-            ease: "power4"
+            ease: "power4",
         });
         gsap.to('#fixedSideMenu li',{
             visibility:'visible',
