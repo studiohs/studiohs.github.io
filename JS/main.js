@@ -34,6 +34,6 @@ menuBtn.addEventListener("click",()=>{
     if(sideMenu.classList.contains("open")){
         menuBtn.innerHTML = "<i class='fas fa-times'></i>";
     }else{
-        menuBtn.innerHTML = "<i class='fas fa-bars'></i>";
+        menuBtn.innerHTML = "<i class='fas fa-arrow-right'></i>";
     }
 })

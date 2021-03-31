@@ -5,7 +5,11 @@
     --lightBlack: #042a2b7a;
 }
 
-
+@font-face {
+    font-family: Acworth;
+    src: url(/assets/Fonts/Acworth-Bold.otf);
+    font-weight: bold;
+}
 
 * {
     margin: 0;
@@ -14,10 +18,8 @@
     box-sizing: border-box;
     font-size: 1em;
     user-select: none;
-    font-family: 'Montserrat','Monas Grotesk','Acworth';
+    font-family: 'Montserrat','Acworth',Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
-    /* cursor: none; */
-
 }
 
 *:not(hr) {
