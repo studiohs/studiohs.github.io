@@ -72,7 +72,11 @@ svg{
     clip-path: circle(100%);
     
     animation: svgBg infinite 10s;
+    
 }
+
+
+
 
 
 /* @keyframes svgBg{
@@ -233,28 +237,30 @@ section#landing-section {
     background: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(10px);
 }
-
-/* #landing-section::before{
-    position: absolute;
-    content: '';
-    top:0;
-    bottom:0;
-    left:0;
-    right: 50%;
-
-    background: rgb(255, 255, 255);
-}
 #landing-section::after{
     position: absolute;
     content: '';
-    top:0;
-    bottom:80%;
-    left:0;
-    right: 50%;
+    bottom:-50%;
+    right: 0%;
+
+    width:30%;
+    height:15%;
 
     background: rgb(233, 255, 192);
-    z-index: 0;
-} */
+    z-index: -1;
+
+    animation: LSAfter 1s cubic-bezier(0,0,0,1) 5s forwards ;
+}
+@keyframes LSAfter{
+    from{
+        bottom:-50%
+    }
+    to{
+        bottom:0%
+    }
+}
+
+
 #topNavigation {
     /* border: 1px solid black; */
     display: grid;
@@ -422,8 +428,9 @@ main.landing-page {
     font-weight: lighter;
     color: rgb(0, 0, 0);
     text-transform: capitalize;
+    position: absolute;
     z-index: 101;
-    top: 88%;
+    top: 50%;
     font-size: 2rem;
     font-family: 'lato';
     font-weight: 400;
