@@ -1,5 +1,5 @@
 :root {
-    --accent: #12c2ab;
+    --accent: #1967f5;
     --yellow: #F2AF29;
     --red: #9B1D20;
     --lightBlack: #042a2b7a;
@@ -14,7 +14,7 @@
     box-sizing: border-box;
     font-size: 1em;
     user-select: none;
-    font-family: 'Lato','Bodoni Moda','Merriweather Sans',"Bebas Neue", "Nunito", Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat','Monas Grotesk','Acworth';
     scroll-behavior: smooth;
     /* cursor: none; */
 
@@ -38,13 +38,31 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background:url('../assets/Media/studiohsbg.jpg'), linear-gradient(124deg, #464646 30%, #690000 100%);
+    /* background:url('../assets/Media/studiohsbg.jpg'), linear-gradient(124deg, #464646 30%, #690000 100%);
 
     background-size: cover;
     background-repeat: no-repeat;
 
-    background-blend-mode: overlay;
-    /* backdrop-filter: blur(1px); */
+    background-blend-mode: overlay; */
+
+
+    /* background: linear-gradient(238.72deg, #EBFF00 0%, #8F00FF 100%), linear-gradient(64.82deg, #AD00FF 0%, #FF0000 100%), linear-gradient(65.03deg, #00FFFF 0%, #FF0000 99.79%), radial-gradient(67.08% 100% at 50% 100%, #FF00C7 0%, #50005E 100%), radial-gradient(100% 140% at 100% 0%, #5ED500 0%, #2200AA 100%);
+    background-blend-mode: color-dodge, difference, lighten, color-dodge, normal; */
+
+
+
+    background: radial-gradient(65% 100% at 50% 0%, #18005B 0%, #000000 100%), radial-gradient(circle at 30% 45%, #FF0000 0%, #FF0000 5%, #FFFF00 5%, #FFFF00 10%, #00FF00 10%, #00FF00 15%, #00FFFF 15%, #00FFFF 20%, #0000FF 20%, #0000FF 30%, #FF00FF 30%, #FF00FF 40%, #FF0000 40%), radial-gradient(circle at 50% 0%, #FF0000 0%, #FF0000 5%, #FFFF00 5%, #FFFF00 10%, #00FF00 10%, #00FF00 20%, #00FFFF 20%, #00FFFF 30%, #0000FF 30%, #0000FF 40%, #FF00FF 40%, #FF00FF 50%, #FF0000 50%), conic-gradient(from 15deg at 20% 420%, #FF0000 0deg, #FF0000 55deg, #FFFF00 60deg, #FFFF00 120deg, #00FF00 120deg, #00FF00 180deg, #00FFFF 180deg, #00FFFF 240deg, #0000FF 240deg, #0000FF 300deg, #FF00FF 310deg, #FF00FF 360deg, #FF0000 360deg);
+    
+    background-blend-mode: screen, multiply, multiply, normal;
+
+}
+
+svg{
+    position: absolute;
+    top:0;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.3;
 }
 
 #preLoader {
@@ -188,6 +206,8 @@ section {
 
 section#landing-section {
     position: relative;
+    background: rgba(255, 255, 255, 0.781);
+    backdrop-filter: blur(10px);
 }
 
 /* #landing-section::before{
@@ -231,48 +251,25 @@ section#landing-section {
 }
 
 .leftMenuItem {
-    border: 1px solid white;
     padding:0 30px;
     display: inline-grid;
     place-items: center;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     height: calc(190px/4);
     font-size: 1rem;
     position: relative;
     transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .leftMenuItem.currentActive {
     color: var(--accent);
-    border: 1px solid var(--accent);
 }
 
-
-/* .leftMenuItem:hover {
-    color: var(--accent);
-} */
-
-/* .leftMenuItem::before {
-    content: "";
-    position: absolute;
-    top: 95%;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    background: var(--accent);
-
-    transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-} */
 
 .leftMenuItem:hover::before {
     right: -15%
-}
-
-.rightMenu {
-    justify-self: end;
-
 }
 
 button.rightMenuBtn {
@@ -378,14 +375,12 @@ main.landing-page {
 
 #leadHeading {
     font-size: 15rem;
-    font-family: 'Bodoni Moda';
-    font-style:italic ;
+    font-family: 'Acworth';
+    /* font-style:italic ; */
     word-spacing: 10px;
     font-weight: 900;
     text-transform: capitalize;
-    color: rgb(255, 255, 255);
-    mix-blend-mode: difference;
-    margin-top: 5vh;
+    margin-top: 8vh;
     width: 100%;
     text-align: center;
     position: relative;
@@ -398,21 +393,24 @@ main.landing-page {
 
 #subLeadHeading {
     margin-top: 2vh;
+    display: block;
+    text-align: right;
     font-weight: lighter;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
     z-index: 101;
     top: 88%;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'lato';
+    font-weight: 400;
     width: 100%;
     text-align: center;
 }
 
 #subLeadHeading span {
     display: inline-block;
-    font-family: 'lato';
-    font-weight: 400;
+    font-family: 'Acworth';
+    font-weight: 900;
     color: var(--accent);
     transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -441,24 +439,26 @@ main.landing-page {
 .landing-page-cta {
     height:calc(190px/4);
     font-size: 1rem;
-    color: #ffffff;
+    font-weight: 900;
+    color: var(--accent);
     display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
     padding: 20px 40px 20px 0;
     transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    border: 1px solid white;
+    border: 3px solid var(--accent);
     display: inline-grid;
     grid-auto-flow: column;
     place-items: center;
     padding:10px 30px;
 }
 
-.landing-page-cta:hover {
-    color: black;
-    background: white;
+.landing-page-cta:hover ,
+.work{
+    color: white;
+    background: var(--accent);
 }
 
 
@@ -486,8 +486,8 @@ main.landing-page {
 
 .socialIcons>p {
     background: none;
-    border: 1px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    border: 3px solid var(--accent);
+    color: var(--accent);
 
     height: 100%;
     width: 100%;
@@ -501,8 +501,8 @@ main.landing-page {
 }
 
 .socialIcons > p:hover{
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background: var(--accent);
+    color: rgb(255, 255, 255);
 }
 
 
